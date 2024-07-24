@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1.5em 1em;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #3498db;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 4em 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #2c3e50;
+}
+
+section p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+#about {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-content p {
+    color: #fff;
+    margin: 10px 0;
+    margin-left: 270px;
+    margin-right: 270px;
+    text-align: left;
+    font-style: italic;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills {
+    background-color: #ecf0f1;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px);
+}
+
+.skills-list i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #3498db;
+}
+
+.skills-list span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+#projects {
+    background: linear-gradient(135deg, #33f0c8, #9b59b6);
+    color: #fff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 177px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.project h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.project p {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.button {
+    background-image: linear-gradient(92.88deg, #644bbe 9.16%, #644bbe 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:hover {
+    box-shadow: rgba(255, 255, 255, 0.681) 0 1px 30px;
+    transition-duration: .1s;
+  }
+  
+#contact {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin-bottom: 20px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #ecf0f1;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2em 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer li {
+    margin: 0 15px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills-list li {
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav li {
+        margin: 10px 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    .button-36 {
+        padding: 0 2.6rem;
+      }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+
+    .skills-list i, .skills-list span {
+        font-size: 16px;
+    }
+
+    .project-image {
+        height: 100px;
+    }
+
+    .project h2 {
+        font-size: 18px;
+    }
+
+    .project p {
+        font-size: 14px;
+    }
+}
